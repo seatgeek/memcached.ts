@@ -20,6 +20,7 @@
   },
   "scripts": {
     "build": "tsdown",
+    "prepare": "pnpm build",
     "prepublishOnly": "pnpm build",
     "lint": "biome check --write --error-on-warnings",
     "test": "pnpm lint && vitest run --coverage",
