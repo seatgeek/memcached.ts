@@ -80,7 +80,10 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist is COMMITTED on this fork so git installs need no build step
+# (no prepare script, no pnpm onlyBuiltDependencies, works under
+# --ignore-scripts). Rebuild with `pnpm build` and include dist/ in any
+# commit that changes src/.
 
 # Gatsby files
 .cache/
